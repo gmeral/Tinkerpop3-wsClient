@@ -41,7 +41,7 @@ function checkAnswerJS(wsId, timeout, answer) {
 	return false;
     }
     else {
-	var resp = recvBuffer.pop();
+	var resp = recvBuffer.shift();
 	writeStringToMemory(resp,answer);
 	console.log(resp);
 	return true;
